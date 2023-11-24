@@ -15,6 +15,7 @@ public class Student {
     public String getName() {return this.name;}
     public double getGPA()  {return this.GPA;}
 
+    // Returns Student object as a String
     public String toString() {
         String tmp = "";
         tmp += "****************";
