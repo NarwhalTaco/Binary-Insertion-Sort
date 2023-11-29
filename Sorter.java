@@ -39,8 +39,8 @@ public class Sorter {
     // Creates and writes the sorted list to a new file
     public void fileWriter() throws IOException {
         try {
-            // Creates the new file called sortedstudents.csv
-            File sortedFile = new File("sortedstudents.csv"); 
+            // Creates the new file called sortedstudents.txt
+            File sortedFile = new File("sortedstudents.txt"); 
             if (sortedFile.createNewFile()) {
                 System.out.println("File Created: " + sortedFile.getName());
             } else {
@@ -48,7 +48,7 @@ public class Sorter {
             }
 
             // Writes to the new file in the same structure as the inputted file
-            FileWriter writer = new FileWriter("sortedstudents.csv"); 
+            FileWriter writer = new FileWriter("sortedstudents.txt"); 
             writer.write("id,name,age,GPA\n");
 
             for (int i = 0; i < studentList.size() - 1; i++) {
